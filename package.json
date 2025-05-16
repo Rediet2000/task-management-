@@ -1,0 +1,19 @@
+{
+  "name": "task-management-system",
+  "version": "1.0.0",
+  "description": "Task Management System for Network and System Administration",
+  "scripts": {
+    "start:backend": "cd backend && uvicorn app.main:app --reload",
+    "start:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "install:all": "npm install && cd frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@nivo/bar": "^0.96.0",
+    "@nivo/core": "^0.96.0",
+    "@nivo/pie": "^0.96.0"
+  }
+}
